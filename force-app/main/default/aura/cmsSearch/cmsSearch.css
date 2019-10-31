@@ -1,0 +1,18 @@
+.THIS .searchBar {
+    width: 100%;
+    position: relative;
+}
+
+.THIS .searchTerm {
+    float: left;
+    width: 60%;
+    border: 3px solid darkslategray;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+.THIS .searchTerm:focus {
+    color: black;
+}

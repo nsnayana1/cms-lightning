@@ -1,0 +1,8 @@
+<aura:component>
+        <div class="searchWrap">
+                <div class="searchBar">
+                    <input type="text" class="searchTerm" placeholder="What property are you looking for?" />
+                    <lightning:buttonIcon iconName="utility:search" alternativeText="Search" class="slds-input__icon" />
+                </div>
+            </div>
+</aura:component>	

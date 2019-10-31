@@ -1,0 +1,6 @@
+<aura:component >
+    <c:cmsNavigation/>
+    <c:cmsHeader/>
+    <c:cmsSearch/>
+    <c:cmsInitDisplay/>
+</aura:component>

@@ -1,0 +1,24 @@
+<aura:component>
+    <div class="demo-only slds-size_2-of-2">
+        <div class="slds-media cms-head">
+            <div class="slds-media__figure">
+                <span class="slds-avatar slds-avatar_large">
+                    <img alt="Logo" src="{!$Resource.Dreamhouse}" />
+                </span>
+            </div>
+            <div class="slds-media__body">
+                    <h1 class="cms-main-header">DREAMHOUSE CMS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="cms-sub-header">   
+        <lightning:layout class="slds-page-header slds-page-header_object-home">
+                <lightning:layoutItem>
+                    <lightning:icon class="botIcon" iconName="standard:bot" alternativeText="Quick Finder"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-medium">
+                    <h2 class="slds-text-heading_large">Quick Finder</h2>
+                </lightning:layoutItem>
+        </lightning:layout>
+    </div>     
+</aura:component>

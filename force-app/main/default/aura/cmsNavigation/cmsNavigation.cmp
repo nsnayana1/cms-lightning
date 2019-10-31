@@ -1,0 +1,11 @@
+<aura:component>
+    <div class="nav">
+            <ul>
+                <li class="home"><a class="active" href="#">Home</a></li>
+                <li class="tutorials"><a href="#">Properties</a></li>
+                <li class="about"><a href="#">Brokers</a></li>
+                <li class="news"><a href="#">About</a></li>
+                <li class="contact"><a href="#">Contact</a></li>
+            </ul>
+      </div>
+</aura:component>	

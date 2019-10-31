@@ -1,0 +1,13 @@
+.THIS .cms-main-header  {
+    font-size: 30px;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: azure;
+    text-align: left;
+}
+
+.THIS .cms-head {
+    background-color: rgb(70, 110, 143);
+    vertical-align: top;
+    height: 100px;
+    line-height: 100px;
+}

@@ -1,0 +1,42 @@
+<aura:component controller="propertyController">
+    <aura:attribute name = "propWList" type="propertyController.propertyWrapper[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:layout class="slds-page-header slds-page-header_object-home">
+            <lightning:layoutItem>
+                <lightning:icon iconName="standard:recent" alternativeText="Quick Finder"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-medium">
+                <h2 class="slds-text-heading_large">Recent Properties</h2>
+            </lightning:layoutItem>
+    </lightning:layout>
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <colgroup>
+            <col span="1" style="width: 5%;"/>
+            <col span="1" style="width: 5%;"/>
+            <col span="1" style="width: 10%;"/>
+            <col span="1" style="width: 30%;"/>
+            <col span="1" style="width: 25%;"/>
+            <col span="1" style="width: 25%;"/>
+         </colgroup>
+        <thead>
+            <tr class="slds-text-heading_label">
+                <th class="propCheck"></th>
+                <th class="propView"></th>
+                <th class="propEdit"></th>
+                <th scope="col" class="propId"><div class="slds-truncate" title="ID">ID</div></th>
+                <th scope="col" class="propName"><div class="slds-truncate" title="Name">Name</div></th>
+                <th scope="col" class="propCity"><div class="slds-truncate" title="City">City</div></th>
+            </tr>
+        </thead>
+        <aura:iteration var="pty" items="{!v.propWList}" >
+            <tr>
+                <td><div class="slds-truncate" ><input type="checkbox" value="{!pty.isChecked}"/></div></td> 
+                <td><div class="slds-truncate" ><lightning:buttonIcon iconName="utility:preview" alternativeText="View" class="slds-input__icon" /></div></td>    
+                <td><div class="slds-truncate" ><lightning:buttonIcon iconName="utility:edit" alternativeText="Edit" class="slds-input__icon" /></div></td>    
+                <th scope="row"><div class="slds-truncate" title="{!pty.Id}">{!pty.prop.Id}</div></th>
+                <td><div class="slds-truncate" title="{!pty.Name}">{!pty.prop.Name}</div></td>
+                <td><div class="slds-truncate" title="{!pty.City}">{!pty.prop.City__c}</div></td>
+            </tr>
+        </aura:iteration>
+    </table>
+</aura:component>	
